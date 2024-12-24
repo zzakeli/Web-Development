@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>button</title>
+  </head>
+  <body>
+    <button
+      onclick="changeWord()"
+      style="background-color: beige; border: 2px solid; border-radius: 8px"
+    >
+      Click me
+    </button>
+    <p id="word">Hello</p>
+
+    <script>
+      function changeWord() {
+        document.getElementById("word").innerHTML = "goodbye";
+      }
+    </script>
+  </body>
+</html>
