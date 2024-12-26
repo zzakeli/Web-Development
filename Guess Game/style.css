@@ -1,0 +1,65 @@
+body{
+    background-color: #500073;
+}
+#container{
+    display:block;
+    margin: auto;
+    text-align: center;
+    border: 5px solid;
+    border-color: white;
+    border-radius: 30px;
+    background-color: #26355D;
+    height: 360px;
+    width: 400px;
+    position:relative;
+    top: 170px;
+}
+#guess-label{
+    font-size: 2em;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    top: 40px;
+    color: white;
+}
+#prompt-label{
+    font-size: 1.5em;
+    margin: auto;
+    display: block; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    top: 220px;
+    color: white;
+}
+#number-input{
+    display:flex;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    background-color: white;
+    position: relative;
+    top:10px;
+    font-size: 40px;
+    width: 100px;
+}
+
+#enter-btn{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    height: 50px;
+    width: 160px;
+    position: relative;
+    bottom: -40px;
+}
+#prompt-attempt-label{
+    font-size: 1.5em;
+    margin: auto;
+    display: block; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    top: 235px;
+    color: white;
+}
