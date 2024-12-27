@@ -88,7 +88,9 @@ function divide(){
 
 //Function for getting result
 function result(){
+    let result;
 
+    document.getElementById("calc-field").value = result;
 }
 
 //Checks if values are still visible on calculator field
@@ -101,10 +103,11 @@ function lengthIsMax(){
 function isOperator(){
     num = String(document.getElementById("calc-field").value);
     let lastVal = num.charAt(num.length - 1);
-    if(lastVal == "+" || lastVal == "-"||lastVal == "x"||lastVal == "/" || lastVal == "" || num.length == 13) return true;
+    if(lastVal == "+" || lastVal == "-"||lastVal == "x"||lastVal == "/" || lastVal == "" || num.length == 13 || lastVal == ".") return true;
     return false;
 }
 
+//Checks if latest value is a digit
 function isDigit(){
     num = String(document.getElementById("calc-field").value);
     let lastVal = num.charAt(num.length - 1);
@@ -112,6 +115,7 @@ function isDigit(){
     return false;
 }
 
+//Checks if there's a point duplicate
 function hasDuplicate(){
     num = String(document.getElementById("calc-field").value);
     let counter = 1;
