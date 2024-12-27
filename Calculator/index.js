@@ -52,7 +52,7 @@ function getZero(){
     document.getElementById("calc-field").value += num.trim();
 }
 function getPoint(){
-    if(lengthIsMax() || isDigit()) return;
+    if(lengthIsMax() || isDigit() || hasDuplicate()) return;
     num = document.getElementById("point").textContent;
     document.getElementById("calc-field").value += num.trim();
 }
@@ -101,7 +101,7 @@ function lengthIsMax(){
 function isOperator(){
     num = String(document.getElementById("calc-field").value);
     let lastVal = num.charAt(num.length - 1);
-    if(lastVal == "+" || lastVal == "-"||lastVal == "x"||lastVal == "/" || lastVal == "" ) return true;
+    if(lastVal == "+" || lastVal == "-"||lastVal == "x"||lastVal == "/" || lastVal == "" || num.length == 13) return true;
     return false;
 }
 
@@ -112,5 +112,15 @@ function isDigit(){
     return false;
 }
 
-
+function hasDuplicate(){
+    num = String(document.getElementById("calc-field").value);
+    let counter = 1;
+    for(let i = 0; i < num.length; i++){
+        if(num.charAt(i) == ".") counter++;
+        if(num.charAt(i) == "+" || num.charAt(i) == "-" || num.charAt(i) == "x" || num.charAt(i) == "/") counter = 1;
+    }    
+    if(counter > 1) return true;
+    console.log(counter);
+    return false;
+}
 
