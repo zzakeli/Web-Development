@@ -11,17 +11,17 @@ function guessMe(){
         if(numEntered > guessNum){
         document.getElementById("prompt-label").textContent = greaterMess;
         attempt++;
-        document.getElementById("prompt-attempt-label").textContent = `Attempt: ${attempt}`;
+        document.getElementById("prompt-attempt-label").textContent = `Attempt/s: ${attempt}`;
         }
         else if(numEntered < guessNum){
         document.getElementById("prompt-label").textContent = lesserMess;
         attempt++;
-        document.getElementById("prompt-attempt-label").textContent = `Attempt: ${attempt}`;
+        document.getElementById("prompt-attempt-label").textContent = `Attempt/s: ${attempt}`;
         }
         else if(numEntered == guessNum){
         attempt++;
         document.getElementById("prompt-label").textContent = equalMess;
-        document.getElementById("prompt-attempt-label").textContent = `Attempt: ${attempt}`;
+        document.getElementById("prompt-attempt-label").textContent = `Attempt/s: ${attempt}`;
         }
         else{
         document.getElementById("prompt-label").textContent = invalidMess;

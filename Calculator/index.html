@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div id="calculator-components">
+      <input readonly id="calc-field" />
+      <div id="calculator-buttons">
+        <div id="calc-num-grp">
+          <button id="seven" onclick="getSeven()" class="button-calc-sgl">
+            7
+          </button>
+          <button id="eight" onclick="getEight()" class="button-calc-sgl">
+            8
+          </button>
+          <button id="nine" onclick="getNine()" class="button-calc-sgl">
+            9
+          </button>
+          <button id="four" onclick="getFour()" class="button-calc-sgl">
+            4
+          </button>
+          <button id="five" onclick="getFive()" class="button-calc-sgl">
+            5
+          </button>
+          <button id="six" onclick="getSix()" class="button-calc-sgl">6</button>
+          <button id="one" onclick="getOne()" class="button-calc-sgl">1</button>
+          <button id="two" onclick="getTwo()" class="button-calc-sgl">2</button>
+          <button id="three" onclick="getThree()" class="button-calc-sgl">
+            3
+          </button>
+          <button id="zero" onclick="getZero()" class="button-calc-sgl">
+            0
+          </button>
+          <button id="point" onclick="getPoint()" class="button-calc-sgl">
+            .
+          </button>
+          <button onclick="deleteAll()" class="button-calc-sgl">AC</button>
+        </div>
+        <div id="calc-operator-grp">
+          <button onclick="backspace()" class="button-calc-sgl" id="del-btn">
+            DEL
+          </button>
+          <button class="button-calc-sgl">=</button>
+          <button class="button-calc-sgl">+</button>
+          <button class="button-calc-sgl">-</button>
+          <button class="button-calc-sgl">x</button>
+          <button class="button-calc-sgl">/</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
