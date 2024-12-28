@@ -88,8 +88,8 @@ function divide(){
 
 //Function for getting result
 function result(){
-    let result;
-
+    let val = String(document.getElementById("calc-field").value);
+    let result = eval(val.replace("x","*"));
     document.getElementById("calc-field").value = result;
 }
 
@@ -122,7 +122,7 @@ function hasDuplicate(){
     for(let i = 0; i < num.length; i++){
         if(num.charAt(i) == ".") counter++;
         if(num.charAt(i) == "+" || num.charAt(i) == "-" || num.charAt(i) == "x" || num.charAt(i) == "/") counter = 1;
-    }    
+    }
     if(counter > 1) return true;
     console.log(counter);
     return false;
