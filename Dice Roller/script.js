@@ -1,6 +1,6 @@
 
 const fs = require('fs');
-console.log();
+
 
 console.log('Node.js installed!');
 
