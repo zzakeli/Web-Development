@@ -96,7 +96,7 @@ body{
 }
 
 #forgot-pass-link{
-    display: block;
+    display: inline;
     margin: auto;
     position: relative;
     right: 50px;
