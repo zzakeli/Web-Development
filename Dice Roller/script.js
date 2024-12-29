@@ -1,4 +1,9 @@
 
+const fs = require('fs');
+console.log();
+
+console.log('Node.js installed!');
+
 //Main function for rolling dice
 function rollDice(){
     document.getElementById("dice-images").innerHTML = "";
