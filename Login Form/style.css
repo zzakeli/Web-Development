@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 body{
     background-color: #ECEBDE;
 }
@@ -13,8 +14,8 @@ body{
     text-align: center;
     position: relative;
     top: 140px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: 'Ysabeau SC', Ysabeau SC;
+    font-weight: bold;
 }
 
 #login-label{
@@ -67,11 +68,14 @@ body{
     display: block;
     margin: auto;
     position: relative;
-    right: 40px;
-    top: 150px;
+    right: 50px;
+    top: 154px;
     padding: 5px;
-    width: 70px;
+    padding-bottom: 7px;
+    width: 80px;
     background-color: #f3f3eb;
+    font-family: 'Ysabeau SC', Ysabeau SC;
+    font-weight: bold;
 }
 
 #login-btn:hover{
@@ -85,11 +89,14 @@ body{
     display: block;
     margin: auto;
     position: relative;
-    left: 40px;
+    left: 50px;
     top: 121px;
     padding: 5px;
-    width: 70px;
+    padding-bottom: 7px;
+    width: 80px;
     background-color: #f3f3eb;
+    font-family: 'Ysabeau SC', Ysabeau SC;
+    font-weight: bold;
 }
 #register-btn:hover{
     background-color: #ffffff;
@@ -100,7 +107,7 @@ body{
     margin: auto;
     position: relative;
     right: 50px;
-    top: 55px;
+    top: 42px;
     font-size: 0.8em;
     color: rgb(93, 92, 92);
 }
