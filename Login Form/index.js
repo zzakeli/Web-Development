@@ -1,0 +1,1 @@
+const register = () => location.href = "Register Form/index.html";

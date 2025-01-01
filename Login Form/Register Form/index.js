@@ -1,0 +1,1 @@
+let back = () => location.href = "index.html";
