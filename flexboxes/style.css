@@ -1,0 +1,21 @@
+body{
+
+    border: 5px solid;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    font-size: 2em;
+    height: 150px;
+    width: 150px;    
+}
