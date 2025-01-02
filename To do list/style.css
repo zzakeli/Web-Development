@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 74);
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    gap: 2%;
+    background-color: rgb(212, 211, 211);
+    height: 540px;
+    width: 500px;
+    box-shadow: 0px 0px 79px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 79px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 79px -3px rgba(0,0,0,0.75);
+}   
+
+#title-box{
+    display: flex;
+    justify-content: flex-end;
+    height: 5%;
+    width: 90%;
+    position: relative;
+    top: 3%;
+}
+
+#title{
+    font-size: 1.3em;
+    font-family:fantasy;
+    font-weight: bold;
+    color: rgb(143, 143, 143);
+}
+
+#add-item{
+    background-color: rgb(168, 168, 168);
+    font-size: 1.5em;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 8%;
+    width: 82%;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    top: 3%;
+}
+#add-item:focus{
+    outline: none;
+}
+#add-item:hover{
+    background-color: rgb(130, 129, 129);
+}
+
+#to-do-box-label{
+    display: flex;
+    justify-content: flex-start;
+    height: 5%;
+    width: 87%;
+    position: relative;
+    top: 7%;
+}
+
+#to-do-label{
+    font-size: 1em;
+    font-family:fantasy;
+    font-weight: bold;
+    color: rgb(103, 103, 103);
+}
+
+.to-do-box{
+    background-color: rgb(168, 168, 168);
+    border-radius: 10px;
+    height: 11%;
+    width: 90%;
+    position: relative;
+    top: 5%;
+}
+
+.to-do-box:hover{
+    background-color: rgb(130, 129, 129);
+}
+
+#complete-box-label{
+    display: flex;
+    justify-content: flex-start;
+    height: 5%;
+    width: 87%;
+    position: relative;
+    top: 10%;
+}
+
+#complete-label{
+    font-size: 1em;
+    font-family:fantasy;
+    font-weight: bold;
+    color: rgb(103, 103, 103);
+}
+
+.complete-box{
+    background-color: rgb(168, 168, 168);
+    border-radius: 10px;
+    height: 11%;
+    width: 90%;
+    position: relative;
+    top: 8%;
+}
+
+.complete-box:hover{
+    background-color: rgb(130, 129, 129);
+}
