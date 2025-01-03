@@ -1,6 +1,6 @@
 body{
     display: flex;
-    height: 100vh;
+    height: 98vh;
     justify-content: center;
     align-items: center;
     background-color: rgb(74, 74, 74);
@@ -46,13 +46,37 @@ body{
     border-radius: 30px;
     border: none;
     position: relative;
-    top: 3%;
 }
 #add-item:focus{
     outline: none;
 }
-#add-item:hover{
-    background-color: rgb(130, 129, 129);
+#add-btn-box{
+    display: flex;
+    justify-content:flex-end;
+    border-radius: 200px;
+    padding-right: 2%;
+    height: 9%;
+    width: 91%;
+    position: relative;
+    top: 9.5%;
+}
+#add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 200px;
+    height: 80%;
+    width: 9%;
+    position: relative;
+    top: 22%;
+    z-index: 1;
+    user-select: none;
+}
+#add-btn:hover{
+    background-color: rgb(231, 231, 231);
 }
 
 #to-do-box-label{
@@ -61,7 +85,7 @@ body{
     height: 5%;
     width: 87%;
     position: relative;
-    top: 7%;
+    top: 4%;
 }
 
 #to-do-label{
@@ -77,7 +101,7 @@ body{
     height: 11%;
     width: 90%;
     position: relative;
-    top: 5%;
+    top: 2%;
 }
 
 .to-do-box:hover{
@@ -90,7 +114,7 @@ body{
     height: 5%;
     width: 87%;
     position: relative;
-    top: 10%;
+    top: 7%;
 }
 
 #complete-label{
@@ -106,7 +130,7 @@ body{
     height: 11%;
     width: 90%;
     position: relative;
-    top: 8%;
+    top: 5%;
 }
 
 .complete-box:hover{
