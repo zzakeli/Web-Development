@@ -3,7 +3,7 @@
 
 body{
     display: flex;
-    background-color: rgb(25, 23, 23);
+    background-color: #d8d8d8;
     display: flex;
     height: 97vh;
     justify-content: center;
@@ -13,9 +13,9 @@ body{
 }
 
 .title{
-    color: rgb(111, 111, 111);
+    color: rgb(203, 203, 203);
     font-size: 1.5em;
-    font-weight: normal;
+    font-weight: 500;
     position: relative;
     top: 3%;
 }
@@ -24,16 +24,41 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
-    border-radius: 30px;
-    background-color: rgb(229, 229, 229);
+    border-radius: 40px;
+    background-color: #213555;
     height: 600px;
     width: 500px;
-    -webkit-box-shadow: 0px 0px 76px -14px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 76px -14px rgba(255,255,255,1);
-    box-shadow: 0px 0px 76px -14px rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
+box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
 }
 
+.add-task-button-block{
+    display: flex;
+    justify-content: flex-end;
+    height: 6.3%;
+    width: 90%;
+    position: relative;
+    border-radius: 20px;
+    top: 6%;
+}
+.add-task-button{
+    background-color: #717f97;
+    color: rgb(207, 207, 207);
+    width: 9%;
+    height: 100%;
+    border-radius: 100px;
+    border: none;
+    transform: scale(0.85);
+    z-index: 1;
+    font-size: 1.7em;
+    font-family: 'Montserrat', Montserrat;
+}
+
+.add-task-button:hover{
+    background-color: #8ea1c2;
+    color: rgb(224, 223, 223);
+}
 .input-block{
     display: flex;
     border-radius: 20px;
@@ -42,10 +67,12 @@ body{
     height: 6.3%;
     width: 90%;
     position: relative;
-    top: 6%;
+    top: -0.3%;
 }
 
 .main-input{
+    background-color: #36455f;
+    color: rgb(203, 203, 203);
     border: none;
     border-radius: 20px;
     padding-left: 4%;
@@ -61,7 +88,7 @@ body{
     height: 20px;
     width: 90%;
     position: relative;
-    top: 10%;
+    top: 3.7%;
     padding-left: 2%;
 }
 .complete-label-box{
@@ -69,36 +96,36 @@ body{
     height: 20px;
     width: 90%;
     position: relative;
-    top: 15%;
+    top: 8.7%;
     padding-left: 2%;
 }
 
 .to-do-label{
-    color: rgb(100, 100, 100);
+    color: rgb(203, 203, 203);
 }
 
 .complete-task-label{
-    color: rgb(100, 100, 100);
+    color: rgb(203, 203, 203);
 }
 
 .to-do-container{
     border-radius: 20px;
-    background-color: rgb(243, 243, 243);
+    background-color: #36455f;
     height: 40%;
     width: 93%;
     position: relative;
-    top: 11%;
+    top: 4.7%;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .complete-task-container{
     border-radius: 20px;
-    background-color: rgb(243, 243, 243);
+    background-color: #36455f;
     height: 23%;
     width: 93%;
     position: relative;
-    top: 16%;
+    top: 9.7%;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: auto;
