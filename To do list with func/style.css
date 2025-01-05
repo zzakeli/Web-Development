@@ -139,7 +139,7 @@ box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
     width: 92%;
     user-select: none;
 }
-.to-do-container div:hover{
+.to-do-container .task-box:hover{
     background-color: #dadada;
 }
 
@@ -158,6 +158,8 @@ box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
 }
 
 .complete-task-container{
+    display: block;
+    justify-content: center;
     border-radius: 20px;
     background-color: #36455f;
     height: 23%;
@@ -167,6 +169,25 @@ box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
     overflow: auto;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.complete-task-container .complete-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2.5%;
+    margin-left: 3%;    
+    padding-left: 5px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #c7c7c7;
+    color: rgb(40, 40, 40);
+    height: 18%;
+    width: 92%;
+    user-select: none;
+}
+.complete-task-container .complete-box:hover{
+    background-color: #dadada;
 }
 
 
