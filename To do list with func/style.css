@@ -102,13 +102,18 @@ box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
 
 .to-do-label{
     color: rgb(203, 203, 203);
+    user-select: none;
 }
 
 .complete-task-label{
     color: rgb(203, 203, 203);
+    user-select: none;
 }
 
 .to-do-container{
+    /* Added incase of bugs */
+    display: block;
+    justify-content: center;
     border-radius: 20px;
     background-color: #36455f;
     height: 40%;
@@ -117,6 +122,41 @@ box-shadow: 0px 0px 37px -11px rgba(0,0,0,1);
     top: 4.7%;
     overflow-x: hidden;
     overflow-y: auto;
+}
+/* Added incase of bugs */
+.to-do-container div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2.5%;
+    margin-left: 3%;
+    padding-left: 5px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #c7c7c7;
+    color: rgb(40, 40, 40);
+    height: 18%;
+    width: 92%;
+    user-select: none;
+}
+.to-do-container div:hover{
+    background-color: #dadada;
+}
+
+.to-do-container button{
+    border: 3px solid #6c7788;
+    border-radius: 6px;
+    height: 100%;
+    width: 8%;
+    position: absolute;
+    right: 0px;
+    background-color: #6c7788;
+    cursor: pointer;
+}
+.to-do-container button:hover{
+    background-color: #7d8b9f;
+    border: 3px solid #7d8b9f;
+    width: 9%;
 }
 
 .complete-task-container{

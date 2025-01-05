@@ -9,9 +9,17 @@
   <body>
     <div class="flex-container" id="flex-container">
       <label class="title" id="title">MY TO DO LIST</label>
+
       <div class="add-task-button-block" id="add-task-button-block">
-        <button class="add-task-button" id="add-task-button">+</button>
+        <button
+          onclick="addTask()"
+          class="add-task-button"
+          id="add-task-button"
+        >
+          +
+        </button>
       </div>
+
       <div class="input-block" id="input-block">
         <input
           maxlength="25"
@@ -20,17 +28,22 @@
           id="main-input"
         />
       </div>
+
       <div class="to-do-label-box" id="to-do-label-box">
         <label class="to-do-label" id="to-do-label">TO DO</label>
       </div>
+
       <div class="to-do-container" id="to-do-container"></div>
+
       <div class="complete-label-box" id="complete-label-box">
         <label class="complete-task-label" id="complete-task-label"
           >COMPLETED
         </label>
       </div>
+
       <div class="complete-task-container" id="complete-task-container"></div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
