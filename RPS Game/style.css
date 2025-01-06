@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: #bea089;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #eee9d9;
+    height: 90%;
+    width: 80%;
+}
+
+.user-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    border: 1px solid;
+    margin: 5%;
+}
+
+.bot-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    border: 1px solid;
+    margin: 5%;
+}
+
+.user-pick-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 90%;
+    font-family: 'Montserrat',Montserrat;       
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(224, 202, 139);
+    padding: 1%;
+    height: 5%;
+    width: 10%;
+    bottom: 8%;
+    left: 25%;
+}
+.user-pick-button:hover{
+    background-color: rgb(236, 212, 147);
+}
+
+.bot-pick-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Montserrat',Montserrat;
+    font-weight: 500;
+    padding: 1%;
+    height: 2%;
+    bottom: 8%;
+    right: 25%;
+    font-size: 90%;
+}
