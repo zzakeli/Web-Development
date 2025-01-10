@@ -8,12 +8,24 @@
   </head>
   <body>
     <div class="flex-container" id="flex-container">
-      <div class="user-container" id="user-container"><img /></div>
-      <button class="user-pick-button" id="user-pick-button">Switch</button>
+      <div class="user-container" id="user-container">
+        <img id="user-hand" src="Hands/rock.png" />
+      </div>
+      <button
+        onclick="switchHand()"
+        class="user-pick-button"
+        id="user-pick-button"
+      >
+        Switch
+      </button>
 
       <div class="indicator-container"></div>
-
-      <div class="bot-container" id="bot-container"><img /></div>
+      <button onclick="randomizeBot()" id="pick-button" class="pick-button">
+        Pick
+      </button>
+      <div class="bot-container" id="bot-container">
+        <img id="bot-hand" src="Hands/rock_flip.png" />
+      </div>
       <label class="bot-pick-label" id="bot-pick-label">Selecting...</label>
     </div>
     <script src="script.js"></script>

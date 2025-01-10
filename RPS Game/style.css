@@ -23,8 +23,12 @@ body{
     align-items: center;
     height: 80%;
     width: 40%;
-    border: 1px solid;
+
     margin: 5%;
+}
+
+.user-container img{
+    width: 90%;
 }
 
 .bot-container{
@@ -33,8 +37,10 @@ body{
     align-items: center;
     height: 80%;
     width: 40%;
-    border: 1px solid;
     margin: 5%;
+}
+.bot-container img{
+    width: 90%;
 }
 
 .user-pick-button{
@@ -42,14 +48,13 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    font-size: 90%;
+    font-size: 80%;
     font-family: 'Montserrat',Montserrat;       
     font-weight: 500;
     border: none;
     border-radius: 8px;
     background-color: rgb(224, 202, 139);
     padding: 1%;
-    height: 5%;
     width: 10%;
     bottom: 8%;
     left: 25%;
@@ -70,4 +75,20 @@ body{
     bottom: 8%;
     right: 25%;
     font-size: 90%;
+}
+
+.pick-button{
+    font-size: 90%;
+    position: relative;
+    top: 44%;
+    height: 7%;
+    width: 10%;
+    padding: 5px;
+    background-color: #85bb72;
+    border: none;
+    border-radius: 8px;
+}
+
+.pick-button:hover{
+    background-color: #94ca80;
 }
