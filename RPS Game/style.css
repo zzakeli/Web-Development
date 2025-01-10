@@ -84,11 +84,39 @@ body{
     height: 7%;
     width: 10%;
     padding: 5px;
-    background-color: #85bb72;
+    background-color: hsl(104, 35%, 59%);
     border: none;
     border-radius: 8px;
 }
 
 .pick-button:hover{
     background-color: #94ca80;
+}
+
+.indicator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Montserrat',Montserrat;
+    background-color: hsl(104, 41%, 65%);
+    position:absolute;
+    width: 100%;
+    height: 20%;
+    z-index: 1;
+}
+
+.indicator-container:hover{
+    background-color: #9ed789;
+    cursor: pointer;
+}
+.indicator-container:active{
+    background-color: #a8e492;
+}
+
+ .continue-label{
+    font-size: 0.3em;
+    position: relative;
+    top: 10%;
 }
