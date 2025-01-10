@@ -1,5 +1,6 @@
 let userScore = 0;
 let botScore = 0;
+
 const switchHand = () => {
     const user = document.getElementById("user-container");
     const hand = document.getElementById("user-hand");
@@ -14,6 +15,7 @@ const switchHand = () => {
     else if(handSource.match("paper")){
         user.innerHTML = `<img id="user-hand" src="Hands/rock.png"/>`
     }
+
 }
 
 const randomizeBot = () => {
@@ -62,11 +64,40 @@ const recordScore = (botSource) =>{
     console.log("Bot: " + botScore);
 }
 
+function randomizeBotHand(){
+    if(count === 25){
+        count = 0;
+        randomizeBot();
+        return;
+    }
+ 
+     setTimeout(() => {
+        if(hand === "rock"){
+            hand = "paper";
+        } else if (hand === "paper"){
+            hand = "scissor";
+        } else {
+            hand = "rock";
+        }
+        bot.innerHTML = `<img id="bot-hand" src="Hands/${hand}_flip.png"/>`
+        count++;
+        randomizeBotHand();
+    }, 100);
+}
 
+let count = 0;
+let hand = null;
+const bot = document.getElementById("bot-container");
 
-
-
-
-
-
-
+async  function randomize(){
+    setTimeout(() => {
+        if(hand === "rock"){
+            hand = "paper";
+        } else if (hand === "paper"){
+            hand = "scissor";
+        } else {
+            hand = "rock";
+        }
+        bot.innerHTML = `<img id="bot-hand" src="Hands/${hand}_flip.png"/>`;
+    }, 2000);
+}
