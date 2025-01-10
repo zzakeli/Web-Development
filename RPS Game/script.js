@@ -42,32 +42,20 @@ const recordScore = (botSource) =>{
     const user = document.getElementById("user-hand");
     const userSource = String(user.src);
 
-    if(userSource.match("rock") && botSource.match("rock")){
+    if((userSource.match("rock") && botSource.match("rock")) 
+        || (userSource.match("paper") && botSource.match("paper")) 
+            ||(userSource.match("scissor") && botSource.match("scissor"))){
         return;
     }
-    if(userSource.match("rock") && botSource.match("paper")){
+    if((userSource.match("rock") && botSource.match("paper")) 
+        || (userSource.match("paper") && botSource.match("scissor")) 
+            || (userSource.match("scissor") && botSource.match("rock"))){
         botScore++;
     }
-    if(userSource.match("rock") && botSource.match("scissor")){
+    if((userSource.match("rock") && botSource.match("scissor")) 
+        || (userSource.match("paper") && botSource.match("rock"))
+            ||(userSource.match("scissor") && botSource.match("paper"))){
         userScore++;
-    }
-    if(userSource.match("paper") && botSource.match("rock")){
-        userScore++;
-    }
-    if(userSource.match("paper") && botSource.match("paper")){
-        return;
-    }
-    if(userSource.match("paper") && botSource.match("scissor")){
-        botScore++;
-    }
-    if(userSource.match("scissor") && botSource.match("rock")){
-        botScore++;
-    }
-    if(userSource.match("scissor") && botSource.match("paper")){
-        userScore++;
-    }
-    if(userSource.match("scissor") && botSource.match("scissor")){
-        return;
     }
 
     console.log("User: " + userScore);
