@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 98vh;
-    background-color: #bea089;
+    background-color: #201c1c;
 }
 
 .flex-container{
@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background-color: #eee9d9;
+    background-color: #e7e7e7;
     height: 90%;
     width: 80%;
 }
@@ -24,7 +24,6 @@ body{
     align-items: center;
     height: 80%;
     width: 40%;
-
     margin: 5%;
 }
 
@@ -54,7 +53,8 @@ body{
     font-weight: 500;
     border: none;
     border-radius: 8px;
-    background-color: rgb(224, 202, 139);
+    color: white;
+    background-color: #3d3939;
     padding: 1%;
     width: 10%;
     min-width: 50px;
@@ -62,11 +62,11 @@ body{
     left: 25%;
 }
 .user-pick-button:hover{
-    background-color: rgb(236, 212, 147);
+    background-color: #545151;
     transform: scale(1.1);
 }
 .user-pick-button:active{
-    background-color: rgb(244, 224, 169);
+    background-color: #666666;;
 }
 
 .bot-pick-label{
@@ -84,18 +84,18 @@ body{
     width: 8%;
     min-width: 40px;
     font-size: 2vw;
-    background-color: rgb(224, 202, 139);
+    color: white;
+    background-color: #3d3939;
 }
 
 .pick-button{
     font-size: 90%;
     position: relative;
-    top: 44%;
-    height: 7%;
-    width: 10%;
+    top: 43%;
+    width: 12%;
     padding: 5px;
     background-color: hsl(104, 35%, 59%);
-    font-size: 2vw;
+    font-size: 3vw;
     border: none;
     border-radius: 8px;
 }
@@ -114,6 +114,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 3em;
+    font-weight: 600;
     font-family: 'Montserrat',Montserrat;
     background-color: hsl(104, 41%, 65%);
     position:absolute;
@@ -142,12 +143,13 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     border: none;
     border-radius: 12px;
     font-family: 'Montserrat',Montse    rrat;
     font-size: 3.5vw;
-    background-color: rgb(153, 153, 153);
+    color: white;
+    background-color: #3d3939;
     width: 15%;
     font-weight: bold;
 }
@@ -155,6 +157,21 @@ body{
 .scoring-board-container label{
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.you-label ,.bot-label{
+    position: absolute;
+    top: 8%;
+    font-family: 'Montserrat',Montserrat;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.you-label{
+    left: 25.5%;
+}
+.bot-label{
+    right: 25.5%
 }
 
 
