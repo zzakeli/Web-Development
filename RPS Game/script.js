@@ -25,13 +25,16 @@ const getBotHand = () => {
 
     if(RandomNum === 1){
         bot.innerHTML = `<img id="bot-hand" src="Hands/rock_flip.png"/>`
+        botSelection.textContent = "Rock";
     }
     else if(RandomNum === 2){
           bot.innerHTML = `<img id="bot-hand" src="Hands/scissor_flip.png"/>`
-    }
+          botSelection.textContent = "Scissor";
+        }
     else if(RandomNum === 3){
           bot.innerHTML = `<img id="bot-hand" src="Hands/paper_flip.png"/>`
-    }
+          botSelection.textContent = "Paper";
+        }
 
     const botHand = document.getElementById("bot-hand");
     const botSource = String(botHand.src);
@@ -39,6 +42,7 @@ const getBotHand = () => {
     recordScore(botSource);
 
 }
+
 const removeIndicator = () =>{
     const indicator = document.getElementById("indicator-container");
     indicator.style.display = 'none';
@@ -49,6 +53,8 @@ const recordScore = (botSource) =>{
     const indicatorLabel = document.getElementById("notification");
     const user = document.getElementById("user-hand");
     const userSource = String(user.src);
+
+    indicator.style.display = 'flex';
 
     if((userSource.match("rock") && botSource.match("rock")) 
         || (userSource.match("paper") && botSource.match("paper")) 
@@ -76,10 +82,11 @@ const recordScore = (botSource) =>{
     console.log("Bot: " + botScore);
 }
 
-
 let count = 0;
 let randomizedHand = "scissor";
 const bot = document.getElementById("bot-container");
+const botSelection = document.getElementById("bot-pick-label");
+const indicator = document.getElementById("indicator-container");
 function randomizeBotHand(){
     if(count === 25){
         count = 0;
@@ -91,14 +98,18 @@ function randomizeBotHand(){
 
 function randomize(){
     setTimeout(() => {
-        if(randomizedHand === "rock"){
-            randomizedHand = "paper";
-        } else if (randomizedHand === "paper"){
-            randomizedHand = "scissor";
+        if(randomizedHand === "Rock"){
+            randomizedHand = "Paper";
+            
+        } else if (randomizedHand === "Paper"){
+            randomizedHand = "Scissor";
         } else {
-            randomizedHand = "rock";
+            randomizedHand = "Rock";
         }
-        bot.innerHTML = `<img id="bot-hand" src="Hands/${randomizedHand}_flip.png"/>`;
+
+        botSelection.textContent = randomizedHand;
+        bot.innerHTML = `<img id="bot-hand" src="Hands/${randomizedHand.toLowerCase()}_flip.png"/>`;
+        indicator.style.display = 'none';
         count++
         randomizeBotHand();
     }, 100);

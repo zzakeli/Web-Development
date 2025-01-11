@@ -61,6 +61,10 @@ body{
 }
 .user-pick-button:hover{
     background-color: rgb(236, 212, 147);
+    transform: scale(1.1);
+}
+.user-pick-button:active{
+    background-color: rgb(244, 224, 169);
 }
 
 .bot-pick-label{
@@ -71,10 +75,12 @@ body{
     font-family: 'Montserrat',Montserrat;
     font-weight: 500;
     padding: 1%;
-    height: 2%;
     bottom: 8%;
     right: 25%;
-    font-size: 90%;
+    font-size: 80%;
+    border-radius: 8px;
+    width: 8%;
+    background-color: rgb(224, 202, 139);
 }
 
 .pick-button{
@@ -91,10 +97,14 @@ body{
 
 .pick-button:hover{
     background-color: #94ca80;
+    transform: scale(1.2);
+}
+.pick-button:active{
+    background-color: #9fd68b;
 }
 
 .indicator-container{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -102,6 +112,7 @@ body{
     font-family: 'Montserrat',Montserrat;
     background-color: hsl(104, 41%, 65%);
     position:absolute;
+    top: 7%;
     width: 100%;
     height: 20%;
     z-index: 1;
@@ -120,3 +131,5 @@ body{
     position: relative;
     top: 10%;
 }
+
+
