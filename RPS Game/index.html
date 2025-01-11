@@ -13,7 +13,6 @@
       id="indicator-container"
     >
       <label id="notification">You Won!</label>
-      <p class="continue-label" id="continue-label">Click to Continue...</p>
     </div>
     <div class="flex-container" id="flex-container">
       <div class="user-container" id="user-container">
@@ -26,14 +25,17 @@
       >
         Switch
       </button>
-
+      <div class="scoring-board-container" id="scoring-board-container">
+        <label class="user-score" id="user-score">0</label> -
+        <label class="bot-score" id="bot-score">0</label>
+      </div>
       <button onclick="randomizeBotHand()" id="pick-button" class="pick-button">
         Pick
       </button>
       <div class="bot-container" id="bot-container">
         <img id="bot-hand" src="Hands/rock_flip.png" />
       </div>
-      <label class="bot-pick-label" id="bot-pick-label">Rock</label>
+      <label class="bot-pick-label" id="bot-pick-label">Bot</label>
     </div>
     <script src="script.js"></script>
   </body>
