@@ -44,7 +44,6 @@ const removeIndicator = () =>{
     indicator.style.display = 'none';
 }
 
-
 const recordScore = (botSource) =>{
     const indicator = document.getElementById("indicator-container");
     const indicatorLabel = document.getElementById("notification");
