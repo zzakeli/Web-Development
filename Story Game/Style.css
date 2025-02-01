@@ -21,24 +21,28 @@ body{
 
 .play-head-label{
     display: flex;
+    text-align: center;
+    justify-content: center;
     font-family: 'Montserrat', Montserrat;
-    font-weight: 300;
-    font-size: 5em;
+    font-weight: 400;
+    font-size: clamp(40px,6vw,6vw);
     user-select: none;
 }
 
 .play-sub-label{
     display: flex;
+    text-align: center;
+    justify-content: center;
     font-family: 'Montserrat', Montserrat;
     font-weight: 250;
-    font-size: 2.5em;
+    font-size: clamp(16px,2.5vw,2.5vw);
     user-select: none;
 }
 
 .play-sub-label:hover{
     cursor: pointer;
     transform: scale(1.2);
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;  
 }
 
 .play-sub-label:not(:hover){
@@ -47,19 +51,80 @@ body{
 }
 
 .game-title{
+    font-family:'Montserrat', Montserrat;
+    font-weight: 300;
+    font-size: 6vw;
+    user-select: none;
     display: none;
+    justify-content: center;
+    text-align: center;
 }
 
 .story-paragraph{
     display: none;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', Montserrat;
+    font-size: clamp(16px,1.8vw, 1.8vw);
+    position: relative;
+    bottom: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.choice-container{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45%;
+    width: 90%;
+}
+
+.choice-box{
+    background-color: white;
+    border-radius: 20px;
+    height: 20vw;
+    width: 27%;
+    cursor: pointer;
+}
+
+.heart-container{
+    display: none;
+    justify-content: space-evenly;
+    height: clamp(30px,3.5vw,3.5vw);
+    width: clamp(120px,20%,20%);
+    position: relative;
+    right: 29%;
+    top: 7%;
+}
+
+.heart{
+    background-color: red;
+    display: flex;
+    height: 100%;
+    width: clamp(30px,22%,22%);
+}
+
+.button-container{
+    display: none;
+    justify-content: space-evenly;
+    height: clamp(35px,4vw,4vw);
+    width: clamp(130px,20%,20%);
+    position: relative;
+    left: 29%;
+    
 }
 
 .back-button{
-    display: none;
+    font-family: 'Montserrat', Montserrat;
+    font-size: 1.8vw;
+    width: 40%;
 }
 
 .next-button{
-    display: none;
+    font-family: 'Montserrat', Montserrat;
+    font-size: 1.8vw;
+    width: 40%;
 }
 
 .game-over-head{
