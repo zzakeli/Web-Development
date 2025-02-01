@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.flex-container{
+    display: flex;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    flex-direction: column;
+    height: 90%;
+    width: 80%;
+}
+
+.play-head-label{
+    display: flex;
+    font-family: 'Montserrat', Montserrat;
+    font-weight: 300;
+    font-size: 5em;
+    user-select: none;
+}
+
+.play-sub-label{
+    display: flex;
+    font-family: 'Montserrat', Montserrat;
+    font-weight: 250;
+    font-size: 2.5em;
+    user-select: none;
+}
+
+.play-sub-label:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.play-sub-label:not(:hover){
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.game-title{
+    display: none;
+}
+
+.story-paragraph{
+    display: none;
+}
+
+.back-button{
+    display: none;
+}
+
+.next-button{
+    display: none;
+}
+
+.game-over-head{
+    display: none;
+}
+
+.game-over-sub{
+    display: none;
+}
+
+.try-again-button{
+    display: none;
+}
+
+.go-back-button{
+    display: none;
+}
