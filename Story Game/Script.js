@@ -28,7 +28,7 @@ const animateTitle = ()=>{
             choices.style.display = "flex";
             hearts.style.display = "flex";
             buttons.style.display = "flex";
-        }, 4000);
+        }, 5000);
 
     },5);
 }

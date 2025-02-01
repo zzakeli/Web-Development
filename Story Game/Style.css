@@ -62,12 +62,14 @@ body{
 
 .story-paragraph{
     display: none;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     font-family: 'Montserrat', Montserrat;
-    font-size: clamp(16px,1.8vw, 1.8vw);
+    font-size: clamp(18px,1.8vw, 1.8vw);
+    font-weight: 500;
     position: relative;
-    bottom: 250px;
+    bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -82,10 +84,20 @@ body{
 
 .choice-box{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
+    border: 1px solid white;
     height: 20vw;
     width: 27%;
     cursor: pointer;
+}
+
+.choice-box:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.choice-box:not(:hover){
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .heart-container{
@@ -95,7 +107,7 @@ body{
     width: clamp(120px,20%,20%);
     position: relative;
     right: 29%;
-    top: 7%;
+    top: clamp(0px,8%,8%);
 }
 
 .heart{
@@ -112,21 +124,29 @@ body{
     width: clamp(130px,20%,20%);
     position: relative;
     left: 29%;
+    top: clamp(0px,1%,1%);
     
 }
 
 .back-button{
     font-family: 'Montserrat', Montserrat;
-    font-size: 1.8vw;
+    font-size: clamp(14px,1.8vw,1.8vw);
     width: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
 
 .next-button{
     font-family: 'Montserrat', Montserrat;
-    font-size: 1.8vw;
+    font-size: clamp(14px,1.8vw,1.8vw);
     width: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
 
+    /* to be designed */
 .game-over-head{
     display: none;
 }
