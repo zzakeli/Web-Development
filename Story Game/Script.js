@@ -1,3 +1,6 @@
+
+//NOTE: also display the first story line before the questions
+
 const title = document.getElementById("game-title")
 const playHead = document.getElementById("play-head-label")
 const playSub = document.getElementById("play-sub-label")
