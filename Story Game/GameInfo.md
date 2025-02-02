@@ -73,11 +73,11 @@ Story:
 You come across a horde of zombies blocking your path.
 Question: What will you do?
 
-    A) Distract them with noise and sneak away
-    B) Charge through with a machete
+    A) Charge through with a machete
+    B) Distract them with noise and sneak away
     C) Hide and wait for them to leave
 
-Answer: A) Distract them with noise and sneak away
+Answer: B) Distract them with noise and sneak away
 Consequence:
 
     Correct: You escape safely.

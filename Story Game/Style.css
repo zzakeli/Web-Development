@@ -102,7 +102,8 @@ body{
 
 .heart-container{
     display: none;
-    justify-content: space-evenly;
+    justify-content:flex-start;
+    gap: 1vw;
     height: clamp(30px,3.5vw,3.5vw);
     width: clamp(120px,20%,20%);
     position: relative;
@@ -110,12 +111,11 @@ body{
     top: clamp(0px,8%,8%);
 }
 
-.heart{
-    background-color: red;
+/* .heart{
     display: flex;
     height: 100%;
-    width: clamp(30px,22%,22%);
-}
+    width: clamp(30px,22%,22%);   
+} */
 
 .button-container{
     display: none;
@@ -152,6 +152,10 @@ body{
 }
 
 .game-over-sub{
+    display: none;
+}
+
+.empty-heart-container{
     display: none;
 }
 

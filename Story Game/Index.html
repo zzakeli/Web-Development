@@ -19,14 +19,10 @@
         <b>Question: What weapon will you use?</b>
       </p>
       <div class="choice-container" id="choice-container">
-        <img class="choice-box" id="choice-box-1" src=""/>
-        <img class="choice-box" id="choice-box-2" src=""/>
-        <img class="choice-box" id="choice-box-3" src=""/></div>
-      <div class="heart-container" id="heart-container">
-        <img class="heart" id="heart-1" src=""/>
-        <img class="heart" id="heart-2" src=""/>
-        <img class="heart" id="heart-3" src=""/>
-      </div>
+        <img onclick="getChoiceOne()" class="choice-box" id="choice-box-1" src="Images/baseball_bat.jpg"/>
+        <img onclick="getChoiceTwo()" class="choice-box" id="choice-box-2" src="Images/butter_knife.png"/>
+        <img onclick="getChoiceThree()" class="choice-box" id="choice-box-3" src="Images/gun.jpg"/></div>
+      <div class="heart-container" id="heart-container"></div>
       <div class="button-container" id="button-container">
         <button class="back-button" id="back-button">BACK</button>
         <button class="next-button" id="next-button">NEXT</button>
@@ -34,9 +30,11 @@
       <!---->
       <h1 class="game-over-head" id="game-over-head">GAME OVER</h1>
       <h3 class="game-over-sub" id="game-over-sub">Lorem ipsum dolor sit amet</h3>
-      <img class="empty-heart" src=""/>
-      <img class="empty-heart" src=""/>
-      <img class="empty-heart" src=""/>
+      <div class="empty-heart-container" id="empty-heart-container">
+        <img class="empty-heart" src="Images/empty_heart.png"/>
+        <img class="empty-heart" src="Images/empty_heart.png"/>
+        <img class="empty-heart" src="Images/empty_heart.png"/>
+      </div>
       <button class="try-again-button" id="try-again-button">TRY AGAIN</button>
       <button class="go-back-button" id="go-back-button">GO BACK</button>
       <!---->
