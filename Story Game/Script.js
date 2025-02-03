@@ -12,6 +12,9 @@ const choices = document.getElementById("choice-container");
 const hearts = document.getElementById("heart-container");
 const gameOverHead = document.getElementById("game-over-head");
 const gameOverSub = document.getElementById("game-over-sub");
+const emptyHeart = document.getElementById("empty-heart-container");
+const tryAgainButton = document.getElementById("try-again-button");
+const goBackButton = document.getElementById("menu-button");
 
 let level = 0;
 let choice = 0;
@@ -63,8 +66,12 @@ const setSecondDisplay = (display) =>{
 }
 
 //to be added
-const displayGameOver = () =>{
-
+const displayGameOver = (display) =>{
+    gameOverHead.style.display = display;
+    gameOverSub.style.display = display;
+    emptyHeart.style.display = display;
+    tryAgainButton.style.display = display;
+    goBackButton.style.display = display;
 }
 
 const selectChoice = () =>{
@@ -164,7 +171,7 @@ const selectChoice = () =>{
 
         if(emptyHeartNum === 3){
             setSecondDisplay("none");
-            displayGameOver();
+            displayGameOver("flex");
         }
         return;
     }

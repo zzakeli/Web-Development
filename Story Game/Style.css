@@ -111,12 +111,6 @@ body{
     top: clamp(0px,8%,8%);
 }
 
-/* .heart{
-    display: flex;
-    height: 100%;
-    width: clamp(30px,22%,22%);   
-} */
-
 .button-container{
     display: none;
     justify-content: space-evenly;
@@ -149,20 +143,57 @@ body{
     /* to be designed */
 .game-over-head{
     display: none;
+    margin-bottom: 0;
+    font-family: 'Montserrat',Montserrat;
+    font-weight: 400;
+    font-size: 7vw;
 }
 
 .game-over-sub{
     display: none;
+    margin-top: 0;
+    font-family: 'Montserrat',Montserrat;
+    font-weight: 400;
+    font-size: 2vw;
+    
 }
 
 .empty-heart-container{
     display: none;
+    justify-content: space-evenly;
+    height:5vw;
+    width: 25%;
+}
+
+.game-over-button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    height: 3vw;
+    width: 25%;
 }
 
 .try-again-button{
     display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', Montserrat;
+    font-weight: 600;
+    font-size: 1.2vw;
+    height: 100%;
+    width: 40%;
+
 }
 
-.go-back-button{
+.menu-button{
     display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', Montserrat;
+    font-weight: 600;
+    font-size: 1.2vw;
+    height: 100%;
+    width: 40%;
 }
