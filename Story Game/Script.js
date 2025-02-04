@@ -24,27 +24,28 @@ let emptyHeartNum = 0;
 
 const start = ()=>{
     resetHeart();
-    setFirstDisplay("none");  
+    setFirstDisplay("none","flex");  
     animateTitle();
 }
 
 const resetHeart = () =>{
+    hearts.innerHTML = "";
+    heartNum = 3;
+    emptyHeartNum = 0;
     for(let i = 0; i < heartNum; i++){
         hearts.innerHTML += '<img id="heart" src="Images/heart.png" style="display: flex; height: 100%; width: clamp(30px,22%,22%);"/>'
     }
 }
 
 const animateTitle = ()=>{
-    title.style.transform = "scale(1)";
     title.style.opacity = "1";
-    title.style.transitionDuration = "5s";
-
     setTimeout(()=>{
         title.style.transform = "scale(1.2)";
         title.style.opacity = "0";
 
         setTimeout(() => {
             title.style.display = "none";
+            title.style.transform = "scale(1)";
             setSecondDisplay("flex");
             level = 1;
         }, 5000);
@@ -52,8 +53,8 @@ const animateTitle = ()=>{
     },5);
 }
 
-const setFirstDisplay = (display) =>{
-    title.style.display = "flex";
+const setFirstDisplay = (display,titleDisplay) =>{
+    title.style.display = titleDisplay;
     playHead.style.display = display;
     playSub.style.display = display;
 }
@@ -102,9 +103,13 @@ const selectChoice = () =>{
                     break;
                 case 2:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 case 3:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 default:
                     break;
@@ -117,9 +122,13 @@ const selectChoice = () =>{
                     break;
                 case 2:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 case 3:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 default:
                     break;
@@ -132,9 +141,13 @@ const selectChoice = () =>{
                     break;
                 case 2:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 case 3:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 default:
                     break;
@@ -144,12 +157,16 @@ const selectChoice = () =>{
             switch (choice) {
                 case 1:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 case 2:
                     isCorrect = true;
                     break;
                 case 3:
                     isCorrect = false;
+                    heartNum--;
+                    emptyHeartNum++;
                     break;
                 default:
                     break;
@@ -176,6 +193,16 @@ const selectChoice = () =>{
         return;
     }
 
+}
+
+const tryAgain = () =>{
+    displayGameOver("none");
+    start();
+}
+
+const menu = () =>{
+    displayGameOver("none");
+    setFirstDisplay("flex","none");
 }
 
 const getChoiceOne = () =>{

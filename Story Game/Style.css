@@ -58,6 +58,9 @@ body{
     display: none;
     justify-content: center;
     text-align: center;
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 5s;
 }
 
 .story-paragraph{
@@ -69,7 +72,7 @@ body{
     font-size: clamp(18px,1.8vw, 1.8vw);
     font-weight: 500;
     position: relative;
-    bottom: 30px;
+    bottom: 1.5%;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -145,8 +148,8 @@ body{
     display: none;
     margin-bottom: 0;
     font-family: 'Montserrat',Montserrat;
-    font-weight: 400;
-    font-size: 7vw;
+    font-weight: 500;
+    font-size: clamp(2.5em,7vw,7vw);
 }
 
 .game-over-sub{
@@ -154,7 +157,7 @@ body{
     margin-top: 0;
     font-family: 'Montserrat',Montserrat;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: clamp(0.8em,2vw,2vw);
     
 }
 
@@ -162,7 +165,9 @@ body{
     display: none;
     justify-content: space-evenly;
     height:5vw;
+    min-height: 40px;
     width: 25%;
+    min-width: 140px;
 }
 
 .game-over-button-container{
@@ -170,6 +175,9 @@ body{
     justify-content: space-evenly;
     margin-top: 2%;
     height: 3vw;
+    min-width: 200px;
+    min-height: 25px;
+    margin-top: 2.5%;
     width: 25%;
 }
 
@@ -180,7 +188,7 @@ body{
     align-items: center;
     font-family: 'Montserrat', Montserrat;
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: clamp(0.5em,1.2vw,1.2vw);
     height: 100%;
     width: 40%;
 
@@ -193,7 +201,7 @@ body{
     align-items: center;
     font-family: 'Montserrat', Montserrat;
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: clamp(0.5em,1.2vw,1.2vw);
     height: 100%;
     width: 40%;
 }
