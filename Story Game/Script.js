@@ -21,13 +21,20 @@ let choice = 0;
 let isCorrect = true;
 let heartNum = 3;
 let emptyHeartNum = 0;
+let incorrectChoice1 = 0;
+let incorrectChoice2 = 0;
 
 const start = ()=>{
     resetHeart();
+    disableButtons(true);
     setFirstDisplay("none","flex");  
     animateTitle();
 }
 
+const disableButtons = (isDisabled) => {
+    backButton.disabled = isDisabled;
+    nextButton.disabled = isDisabled;
+}
 const resetHeart = () =>{
     hearts.innerHTML = "";
     heartNum = 3;
@@ -75,6 +82,26 @@ const displayGameOver = (display) =>{
     goBackButton.style.display = display;
 }
 
+const highlightCorrect = (choice) =>{
+    let correctBox = document.getElementById(`choice-box-${choice}`);
+    correctBox.style.border = "4px solid";
+    correctBox.style.borderColor = " rgb(50, 229, 50)";
+}
+
+const highlightIncorrect = () =>{
+    let choice1 = document.getElementById(`choice-box-${incorrectChoice1}`);
+    let choice2 = document.getElementById(`choice-box-${incorrectChoice2}`);
+
+    choice1.style.borderColor = "RED";
+    choice1.style.border = "4px";
+    choice2.style.borderColor = "RED";
+    choice2.style.border = "4px";
+}
+
+const disableChoices = () =>{
+
+}
+
 const selectChoice = () =>{
     switch (level) {
         case 1:
@@ -91,6 +118,10 @@ const selectChoice = () =>{
                     break;
                 case 3:
                     isCorrect = true;
+                    disableButtons(false);
+                    getIncorrect();
+                    highlightCorrect();
+                    highlightIncorrect();
                     break;
                 default:
                     break;
@@ -176,7 +207,6 @@ const selectChoice = () =>{
             break;
     }
 
-    //this one is wrong--
     if(!isCorrect){
         hearts.innerHTML = "";
         for(let i = 0; i < heartNum; i++){
@@ -193,6 +223,19 @@ const selectChoice = () =>{
         return;
     }
 
+}
+
+const getIncorrect = () => {
+    if(choice === 1){
+        incorrectChoice1 = 2;
+        incorrectChoice2 = 3;
+    }else if (choice === 2){
+        incorrectChoice1 = 1;
+        incorrectChoice2 = 3;
+    }else if( choice === 3){
+        incorrectChoice1 = 1;
+        incorrectChoice2 = 2;
+    }
 }
 
 const tryAgain = () =>{

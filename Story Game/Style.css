@@ -205,3 +205,7 @@ body{
     height: 100%;
     width: 40%;
 }
+
+.choice-box{
+    border: 0px solid;
+}
