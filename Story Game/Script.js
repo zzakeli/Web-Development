@@ -92,10 +92,10 @@ const highlightIncorrect = () =>{
     let choice1 = document.getElementById(`choice-box-${incorrectChoice1}`);
     let choice2 = document.getElementById(`choice-box-${incorrectChoice2}`);
 
+    choice1.style.border = "4px solid";
     choice1.style.borderColor = "RED";
-    choice1.style.border = "4px";
+    choice2.style.border = "4px solid";
     choice2.style.borderColor = "RED";
-    choice2.style.border = "4px";
 }
 
 const disableChoices = () =>{
@@ -120,7 +120,7 @@ const selectChoice = () =>{
                     isCorrect = true;
                     disableButtons(false);
                     getIncorrect();
-                    highlightCorrect();
+                    highlightCorrect(choice);
                     highlightIncorrect();
                     break;
                 default:
@@ -225,7 +225,7 @@ const selectChoice = () =>{
 
 }
 
-const getIncorrect = () => {
+const getIncorrect = () => {    
     if(choice === 1){
         incorrectChoice1 = 2;
         incorrectChoice2 = 3;

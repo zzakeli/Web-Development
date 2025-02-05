@@ -206,6 +206,14 @@ body{
     width: 40%;
 }
 
-.choice-box{
+#choice-box-1{
+    border: 0px solid;
+}
+
+#choice-box-2{
+    border: 0px solid;
+}
+
+#choice-box-3{
     border: 0px solid;
 }
