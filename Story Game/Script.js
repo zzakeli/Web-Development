@@ -99,7 +99,7 @@ const highlightIncorrect = () =>{
 }
 
 const disableChoices = () =>{
-
+    
 }
 
 const selectChoice = () =>{
@@ -261,6 +261,31 @@ const getChoiceTwo = () =>{
 const getChoiceThree = () =>{
     choice = 3;
     selectChoice();
+}
+
+const nextPage = ()=>{
+    level++;
+    choices.innerHTML = "";
+    
+    const boxNum = 3;
+    let numStr = "One";
+    let num = 1;
+
+    for(let i = 0 ; i < boxNum; i++){
+        if(i === 2) numStr = "Two";
+        if(i ===3 ) numStr = "Three";
+        choices.innerHTML += `<img onclick="getChoice${numStr}()" class="choice-box" id="choice-box-${num}" src="Images/baseball_bat.jpg"/>`;
+        num++;
+    }
+}
+
+const backPage = () =>{
+    if(level === 1){
+        //disabled going back to menu
+        return;
+    }
+
+    level--;
 }
 
 
