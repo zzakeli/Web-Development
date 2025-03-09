@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: rgb(150, 220, 255);
+    font-family: 'Montserrat',Montserrat;
+    font-weight: 450;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: clamp(500px,70%,70%);
+    width: clamp(450px,30%,30%);
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 241);
+}
+
+.city-label-box{
+    width:clamp(160px,50%,50%);
+}
+
+.weather-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 60%;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.weather-box img{
+    height: 100%;
+    width: 100%;
+}
+
+.weather-label{
+    font-size: 2.5em;
+}
+
+input{
+    font-size: 1.2em;
+    margin-top: 5px;
+    height: 6%;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+button{
+    height: 8%;
+    width: 30%;
+    font-size: 1.3em;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(164, 200, 248);
+}
+
+button:hover{
+    background-color: rgb(129, 180, 248);
+}
+
+.city-label{
+    font-size: 1.2em;
+}
+

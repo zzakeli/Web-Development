@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label class="weather-label" id="weather-label">Weather</label>
+      <div class="weather-box" id="weather-box">
+        <img
+          src="weather/start-icon.png"
+          class="weather-image"
+          id="weather-image"
+        />
+      </div>
+      <label class="weather-type" id="weather-type"></label>
+      <div class="city-label-box">
+        <label class="city-label" id="city-label">City</label>
+      </div>
+      <input
+        onclick="setBackgroundDefault()"
+        id="input-city"
+        class="input-city"
+      />
+      <button onclick="fetchWeather()">Select</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
