@@ -11,8 +11,7 @@ async function fetchWeather(){
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${getCity()},PH&units=metric&appid=${API_KEY}`;    
     const response = await fetch(url);
     const data = await response.json();
-    if (data.cod == 200){
-        console.log("working");
+    if (data.cod === 200){
         getWeather(data,city);
         return;
     }
@@ -25,11 +24,11 @@ async function fetchWeather(){
     const weatherLabel = document.getElementById("weather-label");
     weatherLabel.textContent = `Weather`;
     }catch (error){
-        console.log("not working")
+        console.log("not working");
     }
 }
 
-const getWeather = (data,city) =>{
+const getWeather = (data, city) =>{
     let weather = data.weather[0].description;
     const weatherType = document.getElementById("weather-type");
     const weatherBox = document.getElementById("weather-box");
