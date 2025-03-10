@@ -6,17 +6,17 @@ const getCity = () =>{
 }
 
 async function fetchWeather(){
+    const weatherType = document.getElementById("weather-type");
+    const weatherBox = document.getElementById("weather-box");
     try{
         const city = document.getElementById("input-city");
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${getCity()},PH&units=metric&appid=${API_KEY}`;    
     const response = await fetch(url);
     const data = await response.json();
     if (data.cod === 200){
-        getWeather(data,city);
+        getWeather(data,city,weatherType,weatherBox);
         return;
     }
-    const weatherType = document.getElementById("weather-type");
-    const weatherBox = document.getElementById("weather-box");
     weatherType.textContent = "N/A";
     weatherBox.innerHTML = '<img class="weather-image" id="weather-image" src="weather/cloud-connection.png">';
     city.style.backgroundColor = 'rgb(255, 120, 120)';
@@ -28,10 +28,8 @@ async function fetchWeather(){
     }
 }
 
-const getWeather = (data, city) =>{
+const getWeather = (data, city, weatherType, weatherBox) =>{
     let weather = data.weather[0].description;
-    const weatherType = document.getElementById("weather-type");
-    const weatherBox = document.getElementById("weather-box");
     const weatherLabel = document.getElementById("weather-label");
     let weatherString = null;
 
