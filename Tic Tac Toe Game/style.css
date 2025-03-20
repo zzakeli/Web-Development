@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 65vh;
+    width: 35vw;
+    gap: 10px;
+    background-color: rgb(191, 157, 89);
+    padding: 10px;
+}

@@ -9,7 +9,7 @@ async function fetchWeather(){
     const weatherType = document.getElementById("weather-type");
     const weatherBox = document.getElementById("weather-box");
     try{
-        const city = document.getElementById("input-city");
+    const city = document.getElementById("input-city");
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${getCity()},PH&units=metric&appid=${API_KEY}`;    
     const response = await fetch(url);
     const data = await response.json();
