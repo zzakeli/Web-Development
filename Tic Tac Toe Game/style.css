@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 97vh;
-    background-color: black;
+    background-color: white;
+    font-family: 'Montserrat', Montserrat;
 }
 
 .container{
@@ -13,9 +18,34 @@ body{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 65vh;
-    width: 35vw;
-    gap: 10px;
+    height: clamp(300px,32vw,32vw);
+    width: clamp(300px,35vw,35vw);
+    
     background-color: rgb(191, 157, 89);
-    padding: 10px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.reset-button{
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat', Montserrat;
+    font-size: clamp(1.5em,3vw,2vw);
+    font-weight: 400;
+    width: clamp(100px,10vw,10vw);
+    height: clamp(40px,4vw,4vw);
+    margin-top: 20px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(100px,7.5vw,7.5vw);
+    width: clamp(100px,8vw,8vw); 
+    margin-bottom: 10px;
+}
+
+.image-turner{
+    height: 100%;
 }
