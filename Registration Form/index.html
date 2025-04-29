@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+        background-color: rgb(226, 226, 226);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+
+      .registration-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 18px;
+        height: 70%;
+        width: 50%;
+        border: none;
+      }
+
+      .left-side-panel {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        background-color: white;
+        border-radius: 18px 0px 0px 18px;
+        padding-left: 5%;
+      }
+
+      .company-logo-text-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .company-logo {
+        width: 20%;
+      }
+
+      .register-text {
+        font-family: "Montserrat", Montserrat;
+        font-weight: 800;
+        font-size: 1.8em;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 10%;
+      }
+      .company-text {
+        font-family: "Montserrat", Montserrat;
+      }
+      .company-text-bottom {
+        font-family: "Montserrat", Montserrat;
+      }
+      .right-side-panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        background-color: rgb(9, 9, 56);
+        border-radius: 0px 18px 18px 0;
+      }
+      .next-form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 70%;
+        width: 100%;
+        padding-left: 15%;
+        gap: 2%;
+      }
+      .sign-up-label {
+        font-family: "Montserrat", Montserrat;
+        font-weight: 800;
+        color: white;
+        margin: 0;
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+
+      .long-input {
+        font-family: "Montserrat", Montserrat;
+        font-size: 1.5em;
+        border: none;
+        outline: none;
+        width: 78.9%;
+        background-color: gray;
+        color: white;
+        border-radius: 3px;
+      }
+      .long-input:hover {
+        background-color: rgb(152, 152, 152);
+      }
+
+      .double-input-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+      }
+
+      .short-input {
+        font-family: "Montserrat", Montserrat;
+        font-size: 1.5em;
+        border: none;
+        outline: none;
+        width: 47%;
+        background-color: gray;
+        color: white;
+        border-radius: 3px;
+      }
+      .short-input:hover {
+        background-color: rgb(152, 152, 152);
+      }
+
+      .next-button {
+        height: 12%;
+        width: 25%;
+        font-size: 1em;
+        font-family: "Montserrat", Montserrat;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: none;
+        background-color: rgb(192, 138, 46);
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+      }
+      .next-button:hover {
+        background-color: rgb(211, 159, 70);
+      }
+
+      .submit-form {
+        display: none;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 70%;
+        width: 100%;
+        padding-left: 15%;
+        gap: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration-container">
+        <div class="left-side-panel">
+          <div class="company-logo-text-container">
+            <img class="company-logo" src="buildings.png" />
+            <h4 class="company-text">HEROES ACADEMY</h4>
+          </div>
+          <h1 class="register-text">REGISTER NOW TO SECURE YOUR SPOT!</h1>
+          <h5 class="company-text-bottom">HEROES ACADEMY PH</h5>
+        </div>
+        <div class="right-side-panel">
+          <form class="next-form" id="next-form">
+            <h1 class="sign-up-label">SIGN UP</h1>
+            <input class="long-input" type="text" placeholder="Full Name" />
+            <div class="double-input-container">
+              <input class="short-input" type="text" placeholder="Sex" />
+              <input class="short-input" type="text" placeholder="Age" />
+            </div>
+            <input class="long-input" type="email" placeholder="Email" />
+            <div class="double-input-container">
+              <input class="short-input" type="text" placeholder="Birthdate" />
+              <input class="short-input" type="tel" placeholder="Contact" />
+            </div>
+            <input
+              class="next-button"
+              type="button"
+              onclick="showSubmitForm()"
+              value="Next"
+            />
+          </form>
+          <form class="submit-form" id="submit-form">
+            <h1 class="sign-up-label">SIGN UP</h1>
+            <input class="long-input" type="text" placeholder="Address" />
+            <div class="double-input-container">
+              <input
+                class="short-input"
+                type="text"
+                placeholder="Civil Status"
+              />
+              <input class="short-input" type="text" placeholder="Religion" />
+            </div>
+            <input
+              class="long-input"
+              type="text"
+              placeholder="Acting Experience"
+            />
+            <div class="double-input-container">
+              <input
+                class="short-input"
+                type="text"
+                placeholder="Nationality"
+              />
+              <input class="short-input" type="text" placeholder="Education" />
+            </div>
+            <input
+              class="next-button"
+              type="submit"
+              onclick="showNextForm()"
+              value="Finish"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showSubmitForm() {
+        document.getElementById("next-form").style.display = "none";
+        document.getElementById("submit-form").style.display = "flex";
+      }
+      function showNextForm() {
+        document.getElementById("submit-form").style.display = "none";
+        document.getElementById("next-form").style.display = "flex";
+      }
+    </script>
+  </body>
+</html>
